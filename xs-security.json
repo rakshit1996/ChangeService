@@ -1,6 +1,31 @@
 {
-  "scopes": [],
+  "scopes": [
+    {
+      "name": "$XSAPPNAME.changeorder-srv",
+      "description": "OC_Viewer"
+    },
+    {
+      "name": "$XSAPPNAME.changeorder",
+      "description": "OC_Manager"
+    }
+  ],
   "attributes": [],
-  "role-templates": [],
-  "authorities-inheritance": false
+  "role-templates": [
+    {
+      "name": "changeorder-srv",
+      "description": "generated",
+      "scope-references": [
+        "$XSAPPNAME.changeorder-srv"
+      ],
+      "attribute-references": []
+    },
+    {
+      "name": "changeorder",
+      "description": "generated",
+      "scope-references": [
+        "$XSAPPNAME.changeorder"
+      ],
+      "attribute-references": []
+    }
+  ]
 }
